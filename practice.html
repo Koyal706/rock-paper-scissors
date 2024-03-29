@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .heading {
+            background-color: rgb(7, 7, 87);
+            height: 54px;
+            width: 100%;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            margin-bottom: 14px;
+        }
+
+        .head {
+            padding: 11px;
+        }
+
+        .images {
+            display: flex;
+            padding: 23px;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .choice {
+            height: 12px;
+            width: 34px;
+            padding: 74px;
+        }
+
+        .choice:hover {
+            opacity: 0.5;
+            cursor: pointer;
+        }
+
+        img {
+            text-align: center;
+            justify-content: center;
+            height: 150px;
+            width: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        p {
+            font-weight: bolder;
+        }
+
+        .score-board {
+            justify-content: center;
+            text-align: center;
+            display: flex;
+            padding: 8px;
+            margin-top: 3rem;
+        }
+
+        .score {
+            padding: 35px;
+            font-size: 2.5rem;
+        }
+
+
+        .msg-container {
+            margin-top: 0.5rem;
+            justify-content: center;
+            text-align: center;
+        }
+
+        #msg {
+            background-color: black;
+            color: white;
+            font-size: 2rem;
+            margin-top: 2rem;
+            display: inline;
+            padding: 1rem;
+            border-radius: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        <h1 class="head">Stone Paper Scissors</h1>
+    </div>
+    <div class="images">
+        <div class="choice" id="rock">
+            <img src="rock (1).png" alt="">
+        </div>
+        <div class="choice" id="paper">
+            <img src="paper.png" alt="">
+        </div>
+        <div class="choice" id="scissors">
+            <img src="scissors.png" alt="">
+        </div>
+    </div>
+    <div class="score-board">
+        <div class="score">
+            <p id="user-score">0</p>
+            <p>you</p>
+        </div>
+        <div class="score">
+            <p id="comp-score">0</p>
+            <p>user</p>
+        </div>
+    </div>
+    <div class="msg-container">
+        <p id="msg"> play your move</p>
+    </div>
+   <script src="practice.js"></script>
+</body>
+
+</html>
